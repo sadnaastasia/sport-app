@@ -35,9 +35,11 @@ export default function App() {
   }, []);
 
   function handleButtonClick() {
+    if (!select.find((item) => item === true)) {
+      document.getElementById('choice')!.scrollIntoView();
+    }
     if (!checked) {
       setCheckBoxStyle(true);
-      document.getElementById('choice')!.scrollIntoView();
     }
   }
 
