@@ -69,8 +69,8 @@ export default function Timer() {
       </div>
       <div
         className={`${
-          style ? 'animate-blink' : ''
-        } flex text-[var(--yellow)] font-[Raleway] text-[28px] min-[375px]:text-[32px] md:text-[40px] font-bold leading-[110%]`}
+          style ? 'animate-blink text-[#ff4e4e]' : 'text-[var(--yellow)]'
+        } flex font-[Raleway] text-[28px] min-[375px]:text-[32px] md:text-[40px] font-bold leading-[110%]`}
       >
         {minutes}
         <span className="mx-[6px]">:</span>
