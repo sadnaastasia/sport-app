@@ -37,6 +37,7 @@ export default function App() {
   function handleButtonClick() {
     if (!checked) {
       setCheckBoxStyle(true);
+      document.getElementById('choice')!.scrollIntoView();
     }
   }
 
@@ -59,7 +60,10 @@ export default function App() {
           <Timer />
         </header>
         <main className="pb-[50px] px-[16px] md:px-[150px] 2xl:px-[352px]">
-          <h1 className="pt-[94px] min-[375px]:pt-[105px] sm:pt-[153px] mb-[24px] min-[375px]:mb-[20px] min-[1200px]:mb-[110px] font-[Montserrat] text-[22px] min-[375px]:text-[24px] sm:text-4xl font-bold text-white leading-[110%]">
+          <h1
+            id="choice"
+            className="pt-[94px] min-[375px]:pt-[105px] sm:pt-[153px] mb-[24px] min-[375px]:mb-[20px] min-[1200px]:mb-[110px] font-[Montserrat] text-[22px] min-[375px]:text-[24px] sm:text-4xl font-bold text-white leading-[110%]"
+          >
             Выбери подходящий для себя{' '}
             <span className="text-[var(--yellow)]">тариф</span>
           </h1>
@@ -167,7 +171,7 @@ export default function App() {
                 </p>
               </div>
               <div>
-                <div className="flex mb-[16px]">
+                <div className="h-[42px] min-[375px]:h-[28px] flex items-center mb-[16px]">
                   <input
                     className="w-[30px] h-[30px] md:w-[32px] md:h-[32px] checkbox-input"
                     type="checkbox"
@@ -213,7 +217,7 @@ export default function App() {
             </div>
           </div>
           <div className="w-full p-[20px] border-1 border-[#484D4E] rounded-[30px]">
-            <div className="h-[44px] md:h-[68px] xl:w-2/3 2xl:w-1/3 flex justify-center items-center border-1 border-[var(--green)] rounded-[30px] font-[Montserrat] font-normal text-[16px] min-[375px]:text-[18px] md:text-[22px] xl:text-[28px] text-[var(--green)] mb-[10px] md:mb-[30px]">
+            <div className="h-[44px] md:h-[68px] w-full 2xl:w-2/3 flex justify-center items-center border-1 border-[var(--green)] rounded-[30px] font-[Montserrat] font-normal text-[16px] min-[375px]:text-[18px] md:text-[22px] xl:text-[28px] text-[var(--green)] mb-[10px] md:mb-[30px]">
               гарантия возврата 30 дней
             </div>
             <p className="font-[Montserrat] font-normal text-[13px] min-[375px]:text-[14px] md:text-[24px] text-[#DCDCDC] leading-[130%]">
