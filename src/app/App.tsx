@@ -188,7 +188,7 @@ export default function App() {
                     htmlFor="policy"
                     className={`${
                       checkBoxStyle ? 'text-[#e61f1f]' : 'text-[#DCDCDC]'
-                    } w-[600px] font-normal leading-[120%] font-[Montserrat] text-[12px] md:text-[16px] ml-[12px]`}
+                    } w-full md:w-[600px] font-normal leading-[120%] font-[Montserrat] text-[12px] md:text-[16px] ml-[12px]`}
                   >
                     {' '}
                     Я согласен с{' '}
